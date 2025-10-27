@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LizzyStore - Fruit Block Blox Fruits</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader">
+        <div class="fruit-spinner">
+            <img src="images/kitsune.png" alt="Loading">
+        </div>
+        <h2 class="loading-text">LizzyStore</h2>
+        <p class="loading-subtext">Tunggu Bentar yahhh...</p>
+      </div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1> Lizzy<span class="store-text">Store</span></h1>
+
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <div class="cart-icon" id="cartIcon">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to LizzyStore</h2>
+            <p class="hero-subtitle">Menjual Buah Aman Dan Terpercaya</p>
+            <p class="hero-desc">Legendary, Mythical & Rare Fruits </p>
+            <button class="cta-button" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+               Beli Sekarang  🚀
+            </button>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-fruit">
+              <img src="images/dough.png" alt="fruit">
+            </div>
+            <div class="floating-fruit">
+              <img src="images/shadow.png" alt="fruit">
+            </div>
+            <div class="floating-fruit">
+               <img src="images/control.png" alt="fruit">
+            </div>
+            <div class="floating-fruit">
+               <img src="images/yeti.png" alt="fruit">
+             </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title">Fruits</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Mythical">Mythical</button>
+                <button class="filter-btn" data-filter="Legendary">Legendary</button>
+                <button class="filter-btn" data-filter="Rare">Rare</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rp 0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose LizzyStore?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Instant delivery after payment confirmed</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Trusted Seller</h3>
+                    <p>100% safe and legitimate transaction</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Best Price</h3>
+                    <p>Competitive prices for all fruits</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>24/7 Support</h3>
+                    <p>Always ready to help you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 LizzyStore. All rights reserved.</p>
+            <p>Contact: WhatsApp • Discord • Telegram</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
