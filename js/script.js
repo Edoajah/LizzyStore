@@ -158,7 +158,7 @@ const products = [
         id: 19,
         name: "Love Fruit",
         type: "Legendary",
-        image: "images/Love.png",
+        image: "images/love.png",
         price: 3000,
         stock: 1
     },
@@ -449,4 +449,5 @@ function checkout() {
     cart = [];
     updateCart();
     document.getElementById('cartSidebar').classList.remove('active');
+
 }
