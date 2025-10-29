@@ -21,7 +21,7 @@ const products = [
         id: 2,
         name: "Shadow Fruit",
         type: "Mythical",
-        image: "images/shadow.png",
+        image: "images/Shadow.png",
         price: 3000,
         stock: 1
     },
@@ -450,3 +450,4 @@ function checkout() {
     updateCart();
     document.getElementById('cartSidebar').classList.remove('active');
 }
+
