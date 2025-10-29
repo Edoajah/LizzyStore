@@ -449,5 +449,4 @@ function checkout() {
     cart = [];
     updateCart();
     document.getElementById('cartSidebar').classList.remove('active');
-
 }
